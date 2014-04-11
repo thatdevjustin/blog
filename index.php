@@ -7,7 +7,7 @@
 			<h1>Welcome to my blog</h1>
 			<div id="blogPost">
 				<?php
-					include 'include.php';
+					include 'core/include.php';
 
 					$blogPosts = GetBlogPosts();
 					foreach ($blogPosts as $post) {

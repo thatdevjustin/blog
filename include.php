@@ -16,7 +16,7 @@
 
 		$postArray = array();
 		while($row = mysql_fetch_assoc($query)){
-			$myPost = new BlogPost($row["id"],$row["title"],$row["post"],$row["postfull"],$row["author_id"],$row["dateposted"]);
+			$myPost = new BlogPost($row["id"],$row["title"],$row["body"],$row["author_id"],$row["date_posted"]);
 			array_push($postArray, $myPost);
 		}
 		return $postArray;

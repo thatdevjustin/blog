@@ -13,7 +13,7 @@
 					foreach ($blogPosts as $post) {
 						echo "<div class='post'>";
 						echo "<h2>" . $post->title . "</h2>";
-						echo "<p>" . $post->post . "</p>";
+						echo "<p>" . $post->body . "</p>";
 						echo "<span class='post_footer'>Posted By: " . $post->author . " Posted On: " . $post->datePosted . " Tags: " . $post->tags . "</span>";
 						echo "</div>";
 					}

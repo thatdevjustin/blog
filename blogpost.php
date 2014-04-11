@@ -24,7 +24,7 @@
 				$this->datePosted = $splitDate[1] . "/" . $splitDate[2] . "/" . $splitDate[0];
 			}
 			//Setting up the Author
-			if (!empty($inAuthorId))
+			if (!empty($inAuthorId)){
 				$query = $mysql_query("SELECT first_name, last_name FROM People WHERE id = " . $inAuthorId);
 				$row = mysql_fetch_assoc($query);
 				$this->author = $row["first_name"] . " " . $row["last_name"];

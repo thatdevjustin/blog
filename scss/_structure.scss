@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+body {
+	background: #ddd;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 0.9em;
+	line-height: 160%;
+	margin: 0;
+	padding: 0;
+	#wrapper {
+		margin: 100px auto 0;
+		overflow: hidden;
+		width: 85%;
+		#nav {
+			text-align: justify;
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,17 @@
 <?php
-	include 'blogpost.php';
+	//Starting User Session
+	session_start();
+	require 'connect/database.php';
+	require 'classes/people.php';
+	require 'classes/general.php';
+
+	$people = new People($db);
+	$general = new General();
+
+	$errors = array();
+
+	//Initializing Blog
+	include 'classes/blogpost.php';
 
 	$connection = mysql_connect("localhost","root","") or die("<p id='sql_error'>Sorry, we were unable to connect to the database.</p>");
 	$database = "home";

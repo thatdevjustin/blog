@@ -1,0 +1,18 @@
+body {
+  background: #ddd;
+  font-family: Tahoma, Verdana, Arial;
+  font-size: 0.9em;
+  line-height: 160%;
+  margin: 0;
+  padding: 0; }
+  body #wrapper {
+    margin: 100px auto 0;
+    overflow: hidden;
+    width: 85%; }
+    body #wrapper #nav {
+      text-align: justify; }
+      body #wrapper #nav ul {
+        margin: 0;
+        padding: 0; }
+        body #wrapper #nav ul li {
+          display: inline-block; }
